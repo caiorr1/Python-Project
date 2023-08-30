@@ -1,1 +1,32 @@
-{"usuarios_cadastrados": {"caio": {"senha": "123", "id": 84086, "cpf": "43417887879", "placa": "LJX7J77", "modelo": "CIVIC"}, "teste": {"senha": "123", "id": 82764, "cpf": "12345678900", "placa": "ABC1234", "modelo": "GOL"}, "a": {"senha": "123", "id": 92043, "cpf": "12345678900", "placa": "123ACVB", "modelo": "GOL"}, "aaoaoa": {"senha": "123", "id": 42524, "cpf": "12345678901", "placa": "123ACVB", "modelo": "GOL"}}}
+{
+    "usuarios_cadastrados": {
+        "caio": {
+            "senha": "123",
+            "id": 84086,
+            "cpf": "43417887879",
+            "placa": "LJX7J77",
+            "modelo": "CIVIC"
+        },
+        "teste": {
+            "senha": "123",
+            "id": 82764,
+            "cpf": "12345678900",
+            "placa": "ABC1234",
+            "modelo": "GOL"
+        },
+        "a": {
+            "senha": "123",
+            "id": 92043,
+            "cpf": "12345678900",
+            "placa": "123ACVB",
+            "modelo": "GOL"
+        },
+        "aaoaoa": {
+            "senha": "123",
+            "id": 42524,
+            "cpf": "12345678901",
+            "placa": "123ACVB",
+            "modelo": "GOL"
+        }
+    }
+}

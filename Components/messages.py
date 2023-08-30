@@ -1,3 +1,3 @@
-def sep(text):
-    print(text*20)
+def sep(text, x):
+    print(text*x)
     

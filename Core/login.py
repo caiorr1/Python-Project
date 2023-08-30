@@ -1,5 +1,5 @@
 import json
-from main import modal
+from Services.modal import modal
 
 
 def login():

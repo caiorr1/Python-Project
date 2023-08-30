@@ -1,14 +1,16 @@
 import random
 import json
-from main import main
+from Core.entrada import main
 from Core.login import login
 from Components.messages import *
 
+bancoDeDados = {'Login1': 'Senha1', 'Login2': 'Senha2'}
+
 def cadastro():
     while True:
-        sep('*')
+        sep('*', 20)
         print('CADASTRO')
-        sep('*')
+        sep('*', 20)
 
         loginCadastro = input('\nOlá, aqui você pode adicionar uma nova conta!\nQual o nome de usuário?\n')
 
