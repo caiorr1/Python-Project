@@ -1,4 +1,5 @@
-from Core.imports import *
+from Core.cadastro import cadastro
+from Core.login import login
 
 def main():
 

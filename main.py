@@ -1,6 +1,5 @@
-from Core.imports import *
+from Core.entrada import main
 from Components.messages import *
-import colorama
 
 
 if __name__ =="__main__":
