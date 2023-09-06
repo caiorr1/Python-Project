@@ -1,5 +1,12 @@
 {
   "usuarios_cadastrados": {
-    
+    "caio": {
+      "senha": "123",
+      "id": 84086,
+      "cpf": "43417887879",
+      "placa": "LJX7J77",
+      "modelo": "CIVIC",
+      "ano": 1993
+    }
   }
 }

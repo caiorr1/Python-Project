@@ -47,6 +47,8 @@ def cadastro():
 
         modelo = input('\nInsira o modelo do veículo\n').upper()
 
+        ano = input('\nInsira o ano do veículo.\n')
+
         senhaCadastro = input('\nQual a senha?\n')
         senhaConfirmacao = input('\nConfirme a senha\n')
 
@@ -62,6 +64,7 @@ def cadastro():
             "cpf": cpf,
             "placa": placa,
             "modelo": modelo,
+            "ano" : ano
         }
 
         with open('./usuarios.json', 'w') as arquivo_final:
