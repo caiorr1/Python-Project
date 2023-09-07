@@ -2,23 +2,16 @@ from Core.entrada import main
 from Components.messages import *
 
 
-if __name__ =="__main__":
-    
-    loop = 2
-
-    while loop == 2:
-        
-        print('\nBEM VINDO AO SISTEMA ANDROMEDA PORTO DE SUPORTE')
+if __name__ == "__main__":
+    while True:
+        print('\nBEM VINDO AO SISTEMA ANDRÔMEDA PORTO DE SUPORTE')
         sep('*', 30)
-        porto = input('Pressione (1) para Inicializar\nPressione (2) para Sair\n')
-        
-        if porto not in ['1', '2']:
-            print('\nNão entendi. Tente novamente.')
+        escolha = input('Escolha uma opção:\n1. Inicializar\n2. Sair\n')
 
+        if escolha == '1':
+            main()
+        elif escolha == '2':
+            print('Você saiu da aplicação.')
+            break
         else:
-            if porto == '2':
-                print('Você saiu da aplicação')
-        
-            elif porto == '1':
-                main()
-            loop += 1
+            print('Opção inválida. Tente novamente.')
