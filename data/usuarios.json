@@ -1,0 +1,74 @@
+{
+    "usuarios_cadastrados": {
+        "caio": {
+            "senha": "123",
+            "id": 84086,
+            "cpf": "43417887879",
+            "placa": "KAX7643",
+            "modelo": "CIVIC",
+            "ano": 1993,
+            "veiculos": [
+                {
+                    "placa": "aaa8786",
+                    "modelo": "gol",
+                    "ano": 2009
+                },
+                {
+                    "placa": "ope1234",
+                    "modelo": "vectra",
+                    "ano": 2008
+                }
+            ],
+            "historico_de_chamados": [
+                {
+                    "tipo_veiculo": "2",
+                    "endereco": "av vida nova",
+                    "telefone": "11971582004",
+                    "tipo_carroceria": "sla",
+                    "chassi": "sim",
+                    "comprimento": "400m",
+                    "peso_com_carga": "2 toneladas",
+                    "peso_sem_carga": "1 tonelada",
+                    "quantidade_eixos": "5",
+                    "informacao_adicional": ""
+                }
+            ]
+        },
+        "teste": {
+            "senha": "123",
+            "id": 16273,
+            "cpf": "12345678901",
+            "veiculos": [
+                {
+                    "placa": "OPI7890",
+                    "modelo": "TRUCK",
+                    "ano": "2013"
+                }
+            ]
+        },
+        "teste2": {
+            "senha": "123",
+            "id": 85494,
+            "cpf": "12345678901",
+            "veiculos": [
+                {
+                    "placa": "IOP1234",
+                    "modelo": "CU",
+                    "ano": "9980"
+                }
+            ]
+        },
+        "test2": {
+            "senha": "123",
+            "id": 57962,
+            "cpf": "12345678901",
+            "veiculos": [
+                {
+                    "placa": "PLC1234",
+                    "modelo": "OOO",
+                    "ano": "1997"
+                }
+            ]
+        }
+    }
+}

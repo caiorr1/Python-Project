@@ -1,0 +1,2038 @@
+{
+    "caminhao": [
+        {
+            "ID_modelo": 320,
+            "IDMARCA": 14,
+            "nome_modelo": "HR",
+            "nome": "HYUNDAI"
+        },
+        {
+            "ID_modelo": 734,
+            "IDMARCA": 4,
+            "nome_modelo": "1113",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 735,
+            "IDMARCA": 4,
+            "nome_modelo": "1214",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 736,
+            "IDMARCA": 4,
+            "nome_modelo": "1318",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 738,
+            "IDMARCA": 4,
+            "nome_modelo": "1519",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 739,
+            "IDMARCA": 4,
+            "nome_modelo": "1614",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 740,
+            "IDMARCA": 4,
+            "nome_modelo": "1620",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 746,
+            "IDMARCA": 27,
+            "nome_modelo": "7000D",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 748,
+            "IDMARCA": 4,
+            "nome_modelo": "709",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 749,
+            "IDMARCA": 4,
+            "nome_modelo": "710",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 750,
+            "IDMARCA": 4,
+            "nome_modelo": "912",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 753,
+            "IDMARCA": 4,
+            "nome_modelo": "2000",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1452,
+            "IDMARCA": 164,
+            "nome_modelo": "TRAILER",
+            "nome": "TRAILER"
+        },
+        {
+            "ID_modelo": 1453,
+            "IDMARCA": 13,
+            "nome_modelo": "F-12000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1461,
+            "IDMARCA": 2,
+            "nome_modelo": "MASCARELLO",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1462,
+            "IDMARCA": 2,
+            "nome_modelo": "GRANMICRO",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1482,
+            "IDMARCA": 263,
+            "nome_modelo": "ONIBUS",
+            "nome": "ONIBUS"
+        },
+        {
+            "ID_modelo": 1483,
+            "IDMARCA": 266,
+            "nome_modelo": "GUINDASTE",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 1511,
+            "IDMARCA": 266,
+            "nome_modelo": "EMPILHADEIRA",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 1519,
+            "IDMARCA": 242,
+            "nome_modelo": "112",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1521,
+            "IDMARCA": 27,
+            "nome_modelo": "10000",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1522,
+            "IDMARCA": 27,
+            "nome_modelo": "13000",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1523,
+            "IDMARCA": 27,
+            "nome_modelo": "14000",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1524,
+            "IDMARCA": 27,
+            "nome_modelo": "1600",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1525,
+            "IDMARCA": 27,
+            "nome_modelo": "1800",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1526,
+            "IDMARCA": 27,
+            "nome_modelo": "4500",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1527,
+            "IDMARCA": 27,
+            "nome_modelo": "5000",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1528,
+            "IDMARCA": 27,
+            "nome_modelo": "6000",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1529,
+            "IDMARCA": 27,
+            "nome_modelo": "7000",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1530,
+            "IDMARCA": 27,
+            "nome_modelo": "7500",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1531,
+            "IDMARCA": 27,
+            "nome_modelo": "8000",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1532,
+            "IDMARCA": 27,
+            "nome_modelo": "8500",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1533,
+            "IDMARCA": 27,
+            "nome_modelo": "8700",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1534,
+            "IDMARCA": 27,
+            "nome_modelo": "9200",
+            "nome": "AGRALE"
+        },
+        {
+            "ID_modelo": 1536,
+            "IDMARCA": 1,
+            "nome_modelo": "D-12000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1537,
+            "IDMARCA": 1,
+            "nome_modelo": "D-13000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1538,
+            "IDMARCA": 1,
+            "nome_modelo": "D-14000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1539,
+            "IDMARCA": 1,
+            "nome_modelo": "19000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1540,
+            "IDMARCA": 1,
+            "nome_modelo": "21000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1541,
+            "IDMARCA": 1,
+            "nome_modelo": "22000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1542,
+            "IDMARCA": 1,
+            "nome_modelo": "D-6000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1543,
+            "IDMARCA": 1,
+            "nome_modelo": "C-60",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1544,
+            "IDMARCA": 1,
+            "nome_modelo": "D-40",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1545,
+            "IDMARCA": 1,
+            "nome_modelo": "D-60",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1546,
+            "IDMARCA": 1,
+            "nome_modelo": "D-70",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1549,
+            "IDMARCA": 61,
+            "nome_modelo": "JBC",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1550,
+            "IDMARCA": 61,
+            "nome_modelo": "N601",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1551,
+            "IDMARCA": 61,
+            "nome_modelo": "N900",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1552,
+            "IDMARCA": 3,
+            "nome_modelo": "190",
+            "nome": "FIAT"
+        },
+        {
+            "ID_modelo": 1626,
+            "IDMARCA": 13,
+            "nome_modelo": "CARGO",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1627,
+            "IDMARCA": 13,
+            "nome_modelo": "F-11000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1629,
+            "IDMARCA": 13,
+            "nome_modelo": "F-13000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1630,
+            "IDMARCA": 13,
+            "nome_modelo": "F-14000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1631,
+            "IDMARCA": 13,
+            "nome_modelo": "F-16000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1632,
+            "IDMARCA": 13,
+            "nome_modelo": "F-19000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1633,
+            "IDMARCA": 13,
+            "nome_modelo": "F-2000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1634,
+            "IDMARCA": 13,
+            "nome_modelo": "F-21000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1635,
+            "IDMARCA": 13,
+            "nome_modelo": "F-22000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1636,
+            "IDMARCA": 13,
+            "nome_modelo": "F-350",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1637,
+            "IDMARCA": 13,
+            "nome_modelo": "F-4",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1638,
+            "IDMARCA": 13,
+            "nome_modelo": "F-4000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1639,
+            "IDMARCA": 13,
+            "nome_modelo": "F-7000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1640,
+            "IDMARCA": 13,
+            "nome_modelo": "F-MAXX",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 1641,
+            "IDMARCA": 1,
+            "nome_modelo": "12-170",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1642,
+            "IDMARCA": 1,
+            "nome_modelo": "14-190",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1643,
+            "IDMARCA": 1,
+            "nome_modelo": "15-190",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1644,
+            "IDMARCA": 1,
+            "nome_modelo": "16-220",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1645,
+            "IDMARCA": 1,
+            "nome_modelo": "3500",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1646,
+            "IDMARCA": 1,
+            "nome_modelo": "5-90",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1647,
+            "IDMARCA": 1,
+            "nome_modelo": "6-100",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1648,
+            "IDMARCA": 1,
+            "nome_modelo": "6-150",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1649,
+            "IDMARCA": 1,
+            "nome_modelo": "7-110",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 1650,
+            "IDMARCA": 14,
+            "nome_modelo": "HD78",
+            "nome": "HYUNDAI"
+        },
+        {
+            "ID_modelo": 1651,
+            "IDMARCA": 85,
+            "nome_modelo": "CITYCLASS",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1652,
+            "IDMARCA": 85,
+            "nome_modelo": "CURSOR",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1653,
+            "IDMARCA": 85,
+            "nome_modelo": "DAILY",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1661,
+            "IDMARCA": 85,
+            "nome_modelo": "EUROCARGO",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1664,
+            "IDMARCA": 85,
+            "nome_modelo": "EUROTECH",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1665,
+            "IDMARCA": 85,
+            "nome_modelo": "EUROTRAKKER",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1666,
+            "IDMARCA": 85,
+            "nome_modelo": "POWERSTAR",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1667,
+            "IDMARCA": 85,
+            "nome_modelo": "STRALIS",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1670,
+            "IDMARCA": 85,
+            "nome_modelo": "TECTOR",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1671,
+            "IDMARCA": 85,
+            "nome_modelo": "TRAKKER",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1672,
+            "IDMARCA": 85,
+            "nome_modelo": "VERTIS",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 1673,
+            "IDMARCA": 274,
+            "nome_modelo": "TGX",
+            "nome": "MAN"
+        },
+        {
+            "ID_modelo": 1679,
+            "IDMARCA": 4,
+            "nome_modelo": "1114",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1681,
+            "IDMARCA": 4,
+            "nome_modelo": "1215",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1682,
+            "IDMARCA": 4,
+            "nome_modelo": "1218",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1684,
+            "IDMARCA": 4,
+            "nome_modelo": "1414",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1686,
+            "IDMARCA": 4,
+            "nome_modelo": "1420",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1687,
+            "IDMARCA": 4,
+            "nome_modelo": "1714",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1689,
+            "IDMARCA": 4,
+            "nome_modelo": "1720",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1690,
+            "IDMARCA": 4,
+            "nome_modelo": "1721",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1691,
+            "IDMARCA": 4,
+            "nome_modelo": "1723",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1693,
+            "IDMARCA": 4,
+            "nome_modelo": "1938",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1694,
+            "IDMARCA": 4,
+            "nome_modelo": "1944-S",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1695,
+            "IDMARCA": 4,
+            "nome_modelo": "2038",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1696,
+            "IDMARCA": 4,
+            "nome_modelo": "2418",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1697,
+            "IDMARCA": 4,
+            "nome_modelo": "2423",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1699,
+            "IDMARCA": 4,
+            "nome_modelo": "2638",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1700,
+            "IDMARCA": 4,
+            "nome_modelo": "2726",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1701,
+            "IDMARCA": 4,
+            "nome_modelo": "608",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1702,
+            "IDMARCA": 4,
+            "nome_modelo": "708",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1705,
+            "IDMARCA": 4,
+            "nome_modelo": "712",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1707,
+            "IDMARCA": 4,
+            "nome_modelo": "914",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1709,
+            "IDMARCA": 4,
+            "nome_modelo": "ACCELO",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1710,
+            "IDMARCA": 4,
+            "nome_modelo": "ACTROS",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1711,
+            "IDMARCA": 4,
+            "nome_modelo": "ATEGO",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1712,
+            "IDMARCA": 4,
+            "nome_modelo": "ATILIS",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1713,
+            "IDMARCA": 4,
+            "nome_modelo": "ATRON",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1714,
+            "IDMARCA": 4,
+            "nome_modelo": "AXOR",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1717,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1117",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1718,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1118",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1721,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1313",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1722,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1314",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1724,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1317",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1726,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1319",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1730,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1514",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1732,
+            "IDMARCA": 4,
+            "nome_modelo": "L-1517",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1735,
+            "IDMARCA": 4,
+            "nome_modelo": "1520",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1744,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2014",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1745,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2017",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1746,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2213",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1747,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2214",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1748,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2215",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1749,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2216",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1750,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2217",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1752,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2220",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1753,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2225",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1754,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2314",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1755,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2318",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1756,
+            "IDMARCA": 4,
+            "nome_modelo": "L-2325",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1757,
+            "IDMARCA": 4,
+            "nome_modelo": "2635",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1771,
+            "IDMARCA": 4,
+            "nome_modelo": "LS-1632",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1780,
+            "IDMARCA": 4,
+            "nome_modelo": "LS-1941",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 1783,
+            "IDMARCA": 275,
+            "nome_modelo": "DURASTAR",
+            "nome": "NAVISTAR"
+        },
+        {
+            "ID_modelo": 1784,
+            "IDMARCA": 275,
+            "nome_modelo": "INTERNATIONAL",
+            "nome": "NAVISTAR"
+        },
+        {
+            "ID_modelo": 1792,
+            "IDMARCA": 124,
+            "nome_modelo": "7900",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1793,
+            "IDMARCA": 124,
+            "nome_modelo": "9000",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1794,
+            "IDMARCA": 124,
+            "nome_modelo": "914",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1795,
+            "IDMARCA": 137,
+            "nome_modelo": "R-112",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1796,
+            "IDMARCA": 137,
+            "nome_modelo": "R-142",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1797,
+            "IDMARCA": 137,
+            "nome_modelo": "T-112",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1798,
+            "IDMARCA": 137,
+            "nome_modelo": "T-142",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 1800,
+            "IDMARCA": 242,
+            "nome_modelo": "380",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1801,
+            "IDMARCA": 242,
+            "nome_modelo": "400",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1802,
+            "IDMARCA": 242,
+            "nome_modelo": "420",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1803,
+            "IDMARCA": 242,
+            "nome_modelo": "440",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1804,
+            "IDMARCA": 242,
+            "nome_modelo": "470",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1805,
+            "IDMARCA": 242,
+            "nome_modelo": "480",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1806,
+            "IDMARCA": 242,
+            "nome_modelo": "111",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1807,
+            "IDMARCA": 242,
+            "nome_modelo": "141",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1808,
+            "IDMARCA": 242,
+            "nome_modelo": "114",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1810,
+            "IDMARCA": 242,
+            "nome_modelo": "230",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1811,
+            "IDMARCA": 242,
+            "nome_modelo": "P-250",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1812,
+            "IDMARCA": 242,
+            "nome_modelo": "P-270",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1813,
+            "IDMARCA": 242,
+            "nome_modelo": "P-310",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1814,
+            "IDMARCA": 242,
+            "nome_modelo": "P-340",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1817,
+            "IDMARCA": 242,
+            "nome_modelo": "93",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1818,
+            "IDMARCA": 242,
+            "nome_modelo": "94",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1822,
+            "IDMARCA": 242,
+            "nome_modelo": "143",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1823,
+            "IDMARCA": 242,
+            "nome_modelo": "164",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1830,
+            "IDMARCA": 242,
+            "nome_modelo": "R-500",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1831,
+            "IDMARCA": 242,
+            "nome_modelo": "R-560",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1832,
+            "IDMARCA": 242,
+            "nome_modelo": "R-580",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1833,
+            "IDMARCA": 242,
+            "nome_modelo": "R-620",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 1839,
+            "IDMARCA": 277,
+            "nome_modelo": "HOWO",
+            "nome": "SINOTRUK"
+        },
+        {
+            "ID_modelo": 1840,
+            "IDMARCA": 2,
+            "nome_modelo": "11-130",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1841,
+            "IDMARCA": 2,
+            "nome_modelo": "11-140",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1842,
+            "IDMARCA": 2,
+            "nome_modelo": "12-170",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1843,
+            "IDMARCA": 2,
+            "nome_modelo": "12-180",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1844,
+            "IDMARCA": 2,
+            "nome_modelo": "13-130",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1845,
+            "IDMARCA": 2,
+            "nome_modelo": "13-150",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1846,
+            "IDMARCA": 2,
+            "nome_modelo": "13-170",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1849,
+            "IDMARCA": 2,
+            "nome_modelo": "14-140",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1850,
+            "IDMARCA": 2,
+            "nome_modelo": "14-150",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1851,
+            "IDMARCA": 2,
+            "nome_modelo": "14-170",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1852,
+            "IDMARCA": 2,
+            "nome_modelo": "14-180",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1853,
+            "IDMARCA": 2,
+            "nome_modelo": "14-200",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1854,
+            "IDMARCA": 2,
+            "nome_modelo": "14-210",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1855,
+            "IDMARCA": 2,
+            "nome_modelo": "14-220",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1856,
+            "IDMARCA": 2,
+            "nome_modelo": "15-170",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1859,
+            "IDMARCA": 2,
+            "nome_modelo": "16-170",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1860,
+            "IDMARCA": 2,
+            "nome_modelo": "16-200",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1861,
+            "IDMARCA": 2,
+            "nome_modelo": "16-210",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1862,
+            "IDMARCA": 2,
+            "nome_modelo": "16-220",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1863,
+            "IDMARCA": 2,
+            "nome_modelo": "16-300",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1864,
+            "IDMARCA": 2,
+            "nome_modelo": "17-180",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1866,
+            "IDMARCA": 2,
+            "nome_modelo": "17-210",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1867,
+            "IDMARCA": 2,
+            "nome_modelo": "17-220",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1869,
+            "IDMARCA": 2,
+            "nome_modelo": "17-280",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1870,
+            "IDMARCA": 2,
+            "nome_modelo": "17-300",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1871,
+            "IDMARCA": 2,
+            "nome_modelo": "17-310",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1873,
+            "IDMARCA": 2,
+            "nome_modelo": "17-330",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1874,
+            "IDMARCA": 2,
+            "nome_modelo": "18-310",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1876,
+            "IDMARCA": 2,
+            "nome_modelo": "19-330",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1878,
+            "IDMARCA": 2,
+            "nome_modelo": "19-390",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1879,
+            "IDMARCA": 2,
+            "nome_modelo": "22-140",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1880,
+            "IDMARCA": 2,
+            "nome_modelo": "22-160",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1881,
+            "IDMARCA": 2,
+            "nome_modelo": "22-210",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1882,
+            "IDMARCA": 2,
+            "nome_modelo": "23-210",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1883,
+            "IDMARCA": 2,
+            "nome_modelo": "23-220",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1884,
+            "IDMARCA": 2,
+            "nome_modelo": "23-250",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1885,
+            "IDMARCA": 2,
+            "nome_modelo": "23-310",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1886,
+            "IDMARCA": 2,
+            "nome_modelo": "24-220",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1888,
+            "IDMARCA": 2,
+            "nome_modelo": "24-280",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1890,
+            "IDMARCA": 2,
+            "nome_modelo": "24-330",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1893,
+            "IDMARCA": 2,
+            "nome_modelo": "25-390",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1894,
+            "IDMARCA": 2,
+            "nome_modelo": "26-220",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1896,
+            "IDMARCA": 2,
+            "nome_modelo": "26-280",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1897,
+            "IDMARCA": 2,
+            "nome_modelo": "26-300",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1898,
+            "IDMARCA": 2,
+            "nome_modelo": "26-310",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1900,
+            "IDMARCA": 2,
+            "nome_modelo": "26-390",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1902,
+            "IDMARCA": 2,
+            "nome_modelo": "31-280",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1903,
+            "IDMARCA": 2,
+            "nome_modelo": "31-310",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1905,
+            "IDMARCA": 2,
+            "nome_modelo": "31-330",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1907,
+            "IDMARCA": 2,
+            "nome_modelo": "31-390",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1908,
+            "IDMARCA": 2,
+            "nome_modelo": "35-300",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1909,
+            "IDMARCA": 2,
+            "nome_modelo": "40-300",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1912,
+            "IDMARCA": 2,
+            "nome_modelo": "6-80",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1913,
+            "IDMARCA": 2,
+            "nome_modelo": "6-90",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1914,
+            "IDMARCA": 2,
+            "nome_modelo": "7-100",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1915,
+            "IDMARCA": 2,
+            "nome_modelo": "7-110",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1916,
+            "IDMARCA": 2,
+            "nome_modelo": "7-90",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1917,
+            "IDMARCA": 2,
+            "nome_modelo": "8-100",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1918,
+            "IDMARCA": 2,
+            "nome_modelo": "8-120",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1919,
+            "IDMARCA": 2,
+            "nome_modelo": "8-140",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1924,
+            "IDMARCA": 2,
+            "nome_modelo": "L-80",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1925,
+            "IDMARCA": 53,
+            "nome_modelo": "FH SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1926,
+            "IDMARCA": 53,
+            "nome_modelo": "FH GLOBETROTTER SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1938,
+            "IDMARCA": 53,
+            "nome_modelo": "FM SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1944,
+            "IDMARCA": 53,
+            "nome_modelo": "FMX SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1951,
+            "IDMARCA": 53,
+            "nome_modelo": "N SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1953,
+            "IDMARCA": 53,
+            "nome_modelo": "NH SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1954,
+            "IDMARCA": 53,
+            "nome_modelo": "NL SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1956,
+            "IDMARCA": 53,
+            "nome_modelo": "VM SERIES",
+            "nome": "VOLVO"
+        },
+        {
+            "ID_modelo": 1994,
+            "IDMARCA": 2,
+            "nome_modelo": "11-160",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1995,
+            "IDMARCA": 2,
+            "nome_modelo": "12-140",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1996,
+            "IDMARCA": 2,
+            "nome_modelo": "17-230",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1997,
+            "IDMARCA": 2,
+            "nome_modelo": "24-230",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1998,
+            "IDMARCA": 2,
+            "nome_modelo": "28-440",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 1999,
+            "IDMARCA": 2,
+            "nome_modelo": "29-440",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2000,
+            "IDMARCA": 2,
+            "nome_modelo": "31-440",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2001,
+            "IDMARCA": 2,
+            "nome_modelo": "33-440",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2002,
+            "IDMARCA": 2,
+            "nome_modelo": "16-180",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2003,
+            "IDMARCA": 2,
+            "nome_modelo": "17-240",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2004,
+            "IDMARCA": 2,
+            "nome_modelo": "17-260",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2005,
+            "IDMARCA": 2,
+            "nome_modelo": "18-320",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2006,
+            "IDMARCA": 2,
+            "nome_modelo": "18-330",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2007,
+            "IDMARCA": 2,
+            "nome_modelo": "15-210",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2016,
+            "IDMARCA": 4,
+            "nome_modelo": "1516",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2018,
+            "IDMARCA": 4,
+            "nome_modelo": "1935",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2019,
+            "IDMARCA": 4,
+            "nome_modelo": "2555",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2020,
+            "IDMARCA": 4,
+            "nome_modelo": "0-400",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2021,
+            "IDMARCA": 284,
+            "nome_modelo": "BI-TREM",
+            "nome": "SCHIFFER"
+        },
+        {
+            "ID_modelo": 2022,
+            "IDMARCA": 285,
+            "nome_modelo": "BITREM",
+            "nome": "GUERRA"
+        },
+        {
+            "ID_modelo": 2023,
+            "IDMARCA": 4,
+            "nome_modelo": "1513",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2024,
+            "IDMARCA": 1,
+            "nome_modelo": "D-1200",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 2025,
+            "IDMARCA": 13,
+            "nome_modelo": "F-3500",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2026,
+            "IDMARCA": 13,
+            "nome_modelo": "F-600",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2027,
+            "IDMARCA": 4,
+            "nome_modelo": "2219",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2028,
+            "IDMARCA": 4,
+            "nome_modelo": "1313",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2029,
+            "IDMARCA": 85,
+            "nome_modelo": "35-10",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 2033,
+            "IDMARCA": 1,
+            "nome_modelo": "MARTA-ROCHA",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 2038,
+            "IDMARCA": 4,
+            "nome_modelo": "1929",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2042,
+            "IDMARCA": 242,
+            "nome_modelo": "124",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2051,
+            "IDMARCA": 4,
+            "nome_modelo": "1618",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2052,
+            "IDMARCA": 4,
+            "nome_modelo": "1934",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2053,
+            "IDMARCA": 4,
+            "nome_modelo": "1924",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2054,
+            "IDMARCA": 4,
+            "nome_modelo": "1634",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2060,
+            "IDMARCA": 13,
+            "nome_modelo": "F-400",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2062,
+            "IDMARCA": 270,
+            "nome_modelo": "MOTOR-HOME",
+            "nome": "MOTOR-HOME"
+        },
+        {
+            "ID_modelo": 2064,
+            "IDMARCA": 292,
+            "nome_modelo": "PA CARREGADEIRA",
+            "nome": "MICHIGAN"
+        },
+        {
+            "ID_modelo": 2085,
+            "IDMARCA": 263,
+            "nome_modelo": "MICRO-ONIBUS",
+            "nome": "ONIBUS"
+        },
+        {
+            "ID_modelo": 2225,
+            "IDMARCA": 242,
+            "nome_modelo": "113",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2255,
+            "IDMARCA": 4,
+            "nome_modelo": "1525",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2256,
+            "IDMARCA": 4,
+            "nome_modelo": "2621",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2297,
+            "IDMARCA": 3,
+            "nome_modelo": "210",
+            "nome": "FIAT"
+        },
+        {
+            "ID_modelo": 2354,
+            "IDMARCA": 242,
+            "nome_modelo": "110",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2355,
+            "IDMARCA": 242,
+            "nome_modelo": "LK-140",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2357,
+            "IDMARCA": 242,
+            "nome_modelo": "L-80",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2358,
+            "IDMARCA": 242,
+            "nome_modelo": "B-110",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2359,
+            "IDMARCA": 242,
+            "nome_modelo": "BR-115",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2362,
+            "IDMARCA": 242,
+            "nome_modelo": "B-111",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2363,
+            "IDMARCA": 242,
+            "nome_modelo": "BR-116",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2364,
+            "IDMARCA": 242,
+            "nome_modelo": "81",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2365,
+            "IDMARCA": 242,
+            "nome_modelo": "82",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2366,
+            "IDMARCA": 242,
+            "nome_modelo": "92",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2367,
+            "IDMARCA": 242,
+            "nome_modelo": "142",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2370,
+            "IDMARCA": 242,
+            "nome_modelo": "144",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2372,
+            "IDMARCA": 242,
+            "nome_modelo": "L-71",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2373,
+            "IDMARCA": 242,
+            "nome_modelo": "L-75",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2374,
+            "IDMARCA": 242,
+            "nome_modelo": "L-76",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2375,
+            "IDMARCA": 242,
+            "nome_modelo": "P-330",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2465,
+            "IDMARCA": 13,
+            "nome_modelo": "F-750",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2466,
+            "IDMARCA": 4,
+            "nome_modelo": "1625",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2478,
+            "IDMARCA": 4,
+            "nome_modelo": "2013",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2483,
+            "IDMARCA": 4,
+            "nome_modelo": "312",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2488,
+            "IDMARCA": 85,
+            "nome_modelo": "80S",
+            "nome": "IVECO"
+        },
+        {
+            "ID_modelo": 2490,
+            "IDMARCA": 13,
+            "nome_modelo": "F-6",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2497,
+            "IDMARCA": 242,
+            "nome_modelo": "490",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2504,
+            "IDMARCA": 68,
+            "nome_modelo": "180",
+            "nome": ""
+        },
+        {
+            "ID_modelo": 2506,
+            "IDMARCA": 4,
+            "nome_modelo": "1622",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2507,
+            "IDMARCA": 4,
+            "nome_modelo": "1524",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2512,
+            "IDMARCA": 4,
+            "nome_modelo": "1630",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2513,
+            "IDMARCA": 4,
+            "nome_modelo": "1932",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2531,
+            "IDMARCA": 4,
+            "nome_modelo": "1316",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2535,
+            "IDMARCA": 242,
+            "nome_modelo": "133",
+            "nome": "SCANIA"
+        },
+        {
+            "ID_modelo": 2538,
+            "IDMARCA": 1,
+            "nome_modelo": "MATRA",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 2539,
+            "IDMARCA": 4,
+            "nome_modelo": "1111",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2549,
+            "IDMARCA": 1,
+            "nome_modelo": "COE",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 2550,
+            "IDMARCA": 13,
+            "nome_modelo": "COE",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2551,
+            "IDMARCA": 3,
+            "nome_modelo": "130",
+            "nome": "FIAT"
+        },
+        {
+            "ID_modelo": 2552,
+            "IDMARCA": 13,
+            "nome_modelo": "F-8",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2577,
+            "IDMARCA": 2,
+            "nome_modelo": "CONSTELLATION",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2578,
+            "IDMARCA": 2,
+            "nome_modelo": "DELIVERY",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2579,
+            "IDMARCA": 2,
+            "nome_modelo": "WORKER",
+            "nome": "VOLKSWAGEN"
+        },
+        {
+            "ID_modelo": 2601,
+            "IDMARCA": 4,
+            "nome_modelo": "321",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2602,
+            "IDMARCA": 4,
+            "nome_modelo": "1317",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2603,
+            "IDMARCA": 3,
+            "nome_modelo": "180",
+            "nome": "FIAT"
+        },
+        {
+            "ID_modelo": 2712,
+            "IDMARCA": 266,
+            "nome_modelo": "ESCAVADEIRA",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2713,
+            "IDMARCA": 266,
+            "nome_modelo": "MUNCK",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2714,
+            "IDMARCA": 266,
+            "nome_modelo": "GUINCHO",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2715,
+            "IDMARCA": 266,
+            "nome_modelo": "CARREGADEIRA",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2723,
+            "IDMARCA": 266,
+            "nome_modelo": "MOTONIVELADORA",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2724,
+            "IDMARCA": 4,
+            "nome_modelo": "2213",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2889,
+            "IDMARCA": 266,
+            "nome_modelo": "TANQUE",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2892,
+            "IDMARCA": 266,
+            "nome_modelo": "POLIGUINDASTE",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2893,
+            "IDMARCA": 4,
+            "nome_modelo": "1621",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2894,
+            "IDMARCA": 13,
+            "nome_modelo": "F-8000",
+            "nome": "FORD"
+        },
+        {
+            "ID_modelo": 2897,
+            "IDMARCA": 274,
+            "nome_modelo": "24250",
+            "nome": "MAN"
+        },
+        {
+            "ID_modelo": 2898,
+            "IDMARCA": 4,
+            "nome_modelo": "1632",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2900,
+            "IDMARCA": 266,
+            "nome_modelo": "PERFURATRIZ",
+            "nome": "UTILITARIOS PESADOS"
+        },
+        {
+            "ID_modelo": 2919,
+            "IDMARCA": 4,
+            "nome_modelo": "180",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2920,
+            "IDMARCA": 4,
+            "nome_modelo": "1517",
+            "nome": "MERCEDES-BENZ"
+        },
+        {
+            "ID_modelo": 2929,
+            "IDMARCA": 1,
+            "nome_modelo": "C-65",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 2930,
+            "IDMARCA": 1,
+            "nome_modelo": "D-11000",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 2964,
+            "IDMARCA": 1,
+            "nome_modelo": "D-65",
+            "nome": "CHEVROLET"
+        },
+        {
+            "ID_modelo": 2971,
+            "IDMARCA": 53,
+            "nome_modelo": "FL SERIES",
+            "nome": "VOLVO"
+        }
+    ]
+}
