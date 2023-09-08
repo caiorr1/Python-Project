@@ -1,11 +1,5 @@
 import json
 
-
-def menu_alterar():
-    return
-
-import json
-
 def trocar_informacoes_usuarios(login):
     try:
         # Tente abrir o arquivo 'usuarios.json' para leitura

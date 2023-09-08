@@ -2,7 +2,7 @@ import json
 import sys
 from datetime import datetime
 from Components.adicionar import menu_adicionar
-from Components.alterar import menu_alterar
+from Components.alterar import trocar_informacoes_usuarios
 from Components.exibir import menu_exibir
 from Components.apagar import menu_apagar
 from Components.messages import sep
@@ -35,7 +35,7 @@ def menu(login):
                 menu_exibir(login)
             elif escolha == '3':
                 print('\nOpção selecionada: Mudar seus dados\n')
-                menu_alterar()
+                trocar_informacoes_usuarios(login)
             elif escolha == '4':
                 print('\nOpção selecionada: Apagar seus dados\n')
                 menu_apagar()
