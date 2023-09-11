@@ -35,7 +35,7 @@ def adicionar_dados_caminhoes():
         'nome': input('Digite o nome da marca: '),
     }
     
-    data['caminhoes'].append(novo_caminhao)
+    data['caminhao'].append(novo_caminhao)
     
     with open('./data/caminhoes.json', 'w') as json_file:
         json.dump(data, json_file, indent=4)

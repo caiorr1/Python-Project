@@ -15,7 +15,8 @@ def ler_usuariosjson(login):
     else:
         usuarios = arquivo_json.get("usuarios_cadastrados", {})
         if login in usuarios:
-            placa = usuarios[login]['placa']
+            veiculos = usuarios.get('veiculos', [])
+            placa = veiculos[0]['placa'] if veiculos else None
             cpf = usuarios[login]['cpf']
             senha = usuarios[login]['senha']
         else:
