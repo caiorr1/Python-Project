@@ -1,10 +1,9 @@
-import json
-from Components.messages import sep
+import sqlite3
 
 def menu_exibir(login):
-    sep('*', 20)
+    print('*' * 20)
     print('Menu de Exibição')
-    sep('*', 20)
+    print('*' * 20)
 
     while True:
         print('\nOpções de Exibição:')
@@ -24,43 +23,59 @@ def menu_exibir(login):
             print('\nOpção inválida. Tente novamente.\n')
 
 def exibir_dados_usuario(login):
-    with open('./data/usuarios.json', 'r') as arquivo:
-        usuarios_json = json.load(arquivo)
-        usuarios = usuarios_json.get("usuarios_cadastrados", {})
+    try:
+        conn = sqlite3.connect('banco_de_dados.db')
+        cursor = conn.cursor()
 
-    if login in usuarios:
-        usuario = usuarios[login]
-        print(f'\nDados do Usuário: {login}')
-        print(f'ID: {usuario["id"]}')
-        print(f'CPF: {usuario["cpf"]}')
+        cursor.execute("SELECT id, cpf FROM usuarios WHERE login = ?", (login,))
+        usuario = cursor.fetchone()
 
-        if "veiculos" in usuario:
-            print("\nVeículos Cadastrados:")
-            for veiculo in usuario["veiculos"]:
-                print(f'Placa: {veiculo["placa"]}')
-                print(f'Modelo: {veiculo["modelo"]}')
-                print(f'Ano: {veiculo["ano"]}')
+        if not usuario:
+            print(f'\nUsuário {login} não encontrado.')
         else:
-            print('\nNenhum veículo cadastrado.')
+            print(f'\nDados do Usuário: {login}')
+            print(f'ID: {usuario[0]}')
+            print(f'CPF: {usuario[1]}')
 
-    else:
-        print(f'\nUsuário {login} não encontrado.')
-        
+            cursor.execute("SELECT placa, modelo, ano FROM veiculos WHERE usuario_id = ?", (usuario[0],))
+            veiculos = cursor.fetchall()
+
+            if veiculos:
+                print("\nVeículos Cadastrados:")
+                for veiculo in veiculos:
+                    print(f'Placa: {veiculo[0]}')
+                    print(f'Modelo: {veiculo[1]}')
+                    print(f'Ano: {veiculo[2]}')
+            else:
+                print('\nNenhum veículo cadastrado.')
+
+        conn.close()
+
+    except Exception as e:
+        print(f'Ocorreu um erro ao exibir dados do usuário: {str(e)}')
+
 def exibir_dados_caminhoes():
     try:
-        with open('./data/caminhoes.json', 'r') as arquivo:
-            data = json.load(arquivo)
-            caminhoes = data.get('caminhao', [])
+        conn = sqlite3.connect('banco_de_dados.db')
+        cursor = conn.cursor()
 
-            if not caminhoes:
-                print('Nenhum dado de caminhão encontrado.')
-            else:
-                print('Dados de Caminhões:')
-                for caminhao in caminhoes:
-                    print(f'ID do Modelo: {caminhao["ID_modelo"]}')
-                    print(f'Nome do Modelo: {caminhao["nome_modelo"]}')
-                    print(f'ID da Marca: {caminhao["IDMARCA"]}')
-                    print(f'Nome da Marca: {caminhao["nome"]}')
-                    print()
-    except FileNotFoundError:
-        print('O arquivo "caminhoes.json" não foi encontrado.')
+        cursor.execute("SELECT ID_modelo, nome_modelo, IDMARCA, nome FROM caminhoes")
+        caminhoes = cursor.fetchall()
+
+        if not caminhoes:
+            print('Nenhum dado de caminhão encontrado.')
+        else:
+            print('Dados de Caminhões:')
+            for caminhao in caminhoes:
+                print(f'ID do Modelo: {caminhao[0]}')
+                print(f'Nome do Modelo: {caminhao[1]}')
+                print(f'ID da Marca: {caminhao[2]}')
+                print(f'Nome da Marca: {caminhao[3]}')
+                print()
+
+        conn.close()
+
+    except Exception as e:
+        print(f'Ocorreu um erro ao exibir dados dos caminhões: {str(e)}')
+
+

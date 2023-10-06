@@ -1,27 +1,29 @@
 import random
-import json
-from Components.messages import *
+import sqlite3
 from Core.login import login
 
 def cadastro():
-    sep('*', 20)
+    print('*' * 20)
     print('CADASTRO')
-    sep('*', 20)
+    print('*' * 20)
 
     while True:
         loginCadastro = input('\nOlá, aqui você pode adicionar uma nova conta!\nQual o nome de usuário?\n')
 
-        with open('./data/usuarios.json', 'r') as arquivo:
-            usuarios_json = json.load(arquivo)
-            usuarios = usuarios_json.get("usuarios_cadastrados", {})
+        conn = sqlite3.connect('banco_de_dados.db')
+        cursor = conn.cursor()
 
-        if loginCadastro in usuarios:
+        cursor.execute("SELECT login FROM usuarios WHERE login = ?", (loginCadastro,))
+        usuario_existente = cursor.fetchone()
+
+        if usuario_existente:
             print(f'\nO usuário {loginCadastro} já existe.')
             decisao_cadastro = input('\nDigite (1) para fazer login ou (2) para cadastrar outro usuário: ')
 
             if decisao_cadastro == '1':
                 print('\nVocê será direcionado para o login.')
-                arquivo.close()
+                conn.close()
+                login()
                 return
             elif decisao_cadastro == '2':
                 print('\nVocê será direcionado para o cadastro.')
@@ -62,28 +64,19 @@ def cadastro():
         
         id_usuario = random.randint(10000, 99999)
 
-        novo_veiculo = {
-            "placa": placa,
-            "modelo": modelo,
-            "ano": ano
-        }
+        cursor.execute("INSERT INTO usuarios (login, senha, id, cpf) VALUES (?, ?, ?, ?)",
+                       (loginCadastro, senhaCadastro, id_usuario, cpf))
+        conn.commit()
 
-        if loginCadastro not in usuarios:
-            usuarios[loginCadastro] = {
-                "senha": senhaCadastro,
-                "id": id_usuario,
-                "cpf": cpf,
-                "veiculos": []
-            }
-        
-        usuarios[loginCadastro]["veiculos"].append(novo_veiculo)
+        cursor.execute("INSERT INTO veiculos (usuario_id, placa, modelo, ano) VALUES (?, ?, ?, ?)",
+                       (id_usuario, placa, modelo, ano))
+        conn.commit()
 
-        with open('./data/usuarios.json', 'w') as arquivo_final:
-            json.dump({"usuarios_cadastrados": usuarios}, arquivo_final)
+        conn.close()
 
         print('\nParabéns! Você realizou o seu cadastro!')
         print(f'Seu id é {id_usuario}\n')
-        
+
         while True:
             decisao = input('Digite (1) para cadastrar outro usuário ou (2) para fazer login: ')
             if decisao == '1':
@@ -91,6 +84,4 @@ def cadastro():
             elif decisao == '2':
                 login()
                 return
-        
-        
-        
+

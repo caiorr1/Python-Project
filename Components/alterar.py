@@ -1,14 +1,17 @@
-import json
+import sqlite3
 
 def trocar_informacoes_usuarios(login):
     try:
-        # Tente abrir o arquivo 'usuarios.json' para leitura
-        with open('./data/usuarios.json', 'r') as json_file:
-            data = json.load(json_file)
+        conn = sqlite3.connect('banco_de_dados.db')
+        cursor = conn.cursor()
 
-        # Verifique se o usuário existe no arquivo
-        if login not in data.get('usuarios_cadastrados', {}):
+        # Verifique se o usuário existe no banco de dados
+        cursor.execute("SELECT id FROM usuarios WHERE login = ?", (login,))
+        usuario_id = cursor.fetchone()
+
+        if not usuario_id:
             print(f'Usuário {login} não encontrado.')
+            conn.close()
             return
 
         print(f'Bem-vindo, {login}! O que você deseja trocar?')
@@ -23,32 +26,28 @@ def trocar_informacoes_usuarios(login):
 
         if escolha == '1':
             nova_senha = input('Digite a nova senha: ')
-            data['usuarios_cadastrados'][login]['senha'] = nova_senha
+            cursor.execute("UPDATE usuarios SET senha = ? WHERE login = ?", (nova_senha, login))
         elif escolha == '2':
             novo_id = input('Digite o novo ID: ')
-            data['usuarios_cadastrados'][login]['id'] = int(novo_id)
+            cursor.execute("UPDATE usuarios SET id = ? WHERE login = ?", (int(novo_id), login))
         elif escolha == '3':
             novo_cpf = input('Digite o novo CPF: ')
-            data['usuarios_cadastrados'][login]['cpf'] = novo_cpf
+            cursor.execute("UPDATE usuarios SET cpf = ? WHERE login = ?", (novo_cpf, login))
         elif escolha == '4':
             nova_placa = input('Digite a nova placa: ')
-            data['usuarios_cadastrados'][login]['veiculos'][0]['placa'] = nova_placa
+            cursor.execute("UPDATE veiculos SET placa = ? WHERE usuario_id = ?", (nova_placa, usuario_id[0]))
         elif escolha == '5':
             novo_modelo = input('Digite o novo modelo: ')
-            data['usuarios_cadastrados'][login]['veiculos'][0]['modelo'] = novo_modelo
+            cursor.execute("UPDATE veiculos SET modelo = ? WHERE usuario_id = ?", (novo_modelo, usuario_id[0]))
         elif escolha == '6':
             novo_ano = input('Digite o novo ano: ')
-            data['usuarios_cadastrados'][login]['veiculos'][0]['ano'] = int(novo_ano)
+            cursor.execute("UPDATE veiculos SET ano = ? WHERE usuario_id = ?", (int(novo_ano), usuario_id[0]))
         else:
             print('Opção inválida.')
 
-        # Escreva o arquivo 'usuarios.json' com as novas informações
-        with open('./data/usuarios.json', 'w') as json_file:
-            json.dump(data, json_file, indent=4)
-
+        conn.commit()
+        conn.close()
         print('Informações atualizadas com sucesso.')
 
-    except FileNotFoundError:
-        print('O arquivo "usuarios.json" não foi encontrado.')
     except Exception as e:
         print(f'Ocorreu um erro ao atualizar informações: {str(e)}')

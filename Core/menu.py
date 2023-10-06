@@ -1,20 +1,15 @@
-import json
 import sys
 from datetime import datetime
 from Components.adicionar import menu_adicionar
 from Components.alterar import trocar_informacoes_usuarios
 from Components.exibir import menu_exibir
 from Components.apagar import menu_apagar
-from Components.messages import sep
-from Components.lerjson import ler_usuariosjson
 
-def menu(login):
-    sep('*', 20)
+def menu(login, placa, cpf):
+    print('*', 20)
     print('Bem Vindo ao Menu Inicial!')
-    sep('*', 20)
-    
-    usuarios, senha, placa, cpf = ler_usuariosjson(login)
-    
+    print('*', 20)
+        
     while True:
         print('\nOpções do Menu:')
         print('1. Adicionar informações nos seus dados')
@@ -52,9 +47,9 @@ def menu(login):
             
 def modal(placa, cpf, login):
     while True:
-        sep('*', 25)
+        print('*', 25)
         print('MODAL')
-        sep('*', 25)
+        print('*', 25)
 
         while True:
             chamarModal = input('1. Pressione (1) para chamar um Guincho leve\n2. Pressione (2) para chamar um Guincho pesado\n')
@@ -117,41 +112,17 @@ def modal(placa, cpf, login):
             sys.exit()
 
 
-def registrar_chamado_no_historico(login, tipo_veiculo, descobrindo_caso, endereco, telefone, tipo_carroceria, chassi, comprimento, peso_com_carga, peso_sem_carga, quantidade_eixos, informacao_adicional):
+def registrar_chamado_no_historico(login, tipo_veiculo, descobrindo_caso, endereco, telefone, tipo_carroceria, chassi, comprimento, peso_com_carga, peso_sem_carga, quantidade_eixos, informacao_adicional, conn):
     try:
-        with open('./data/usuarios.json', 'r') as json_file:
-            data = json.load(json_file)
-
-        if login not in data.get('usuarios_cadastrados', {}):
-            print(f'Usuário {login} não encontrado.')
-            return
-
         timestamp = datetime.now().isoformat()
 
-        novo_chamado = {
-            'tipo_veiculo': 'veiculo leve' if tipo_veiculo == '1' else 'veiculo pesado',
-            'descobrindo_caso': 'acidente de trânsito' if descobrindo_caso == '1' else 'falha operacional',
-            'timestamp': timestamp,
-            'endereco': endereco,
-            'telefone': telefone,
-            'tipo_carroceria': tipo_carroceria,
-            'chassi': chassi,
-            'comprimento': comprimento,
-            'peso_com_carga': peso_com_carga,
-            'peso_sem_carga': peso_sem_carga,
-            'quantidade_eixos': quantidade_eixos,
-            'informacao_adicional': informacao_adicional
-        }
+        conn.execute("""
+            INSERT INTO historico_chamados
+            (login, tipo_veiculo, descobrindo_caso, timestamp, endereco, telefone, tipo_carroceria, chassi, comprimento, peso_com_carga, peso_sem_carga, quantidade_eixos, informacao_adicional)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (login, tipo_veiculo, descobrindo_caso, timestamp, endereco, telefone, tipo_carroceria, chassi, comprimento, peso_com_carga, peso_sem_carga, quantidade_eixos, informacao_adicional))
 
-        usuario_existente = data['usuarios_cadastrados'][login]
-        if 'historico_de_chamados' not in usuario_existente:
-            usuario_existente['historico_de_chamados'] = []
-        usuario_existente['historico_de_chamados'].append(novo_chamado)
+        conn.commit()
 
-        with open('./data/usuarios.json', 'w') as json_file:
-            json.dump(data, json_file, indent=4)
-
-    except FileNotFoundError:
-        print('O arquivo "usuarios.json" não foi encontrado.')
     except Exception as e:
         print(f'Ocorreu um erro ao registrar o chamado: {str(e)}')
