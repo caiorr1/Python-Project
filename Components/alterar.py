@@ -2,7 +2,7 @@ import sqlite3
 
 def trocar_informacoes_usuarios(login):
     try:
-        conn = sqlite3.connect('banco_de_dados.db')
+        conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
         # Verifique se o usuário existe no banco de dados

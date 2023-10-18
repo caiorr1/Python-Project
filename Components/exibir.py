@@ -24,7 +24,7 @@ def menu_exibir(login):
 
 def exibir_dados_usuario(login):
     try:
-        conn = sqlite3.connect('banco_de_dados.db')
+        conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
         cursor.execute("SELECT id, cpf FROM usuarios WHERE login = ?", (login,))
@@ -56,7 +56,7 @@ def exibir_dados_usuario(login):
 
 def exibir_dados_caminhoes():
     try:
-        conn = sqlite3.connect('banco_de_dados.db')
+        conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
         cursor.execute("SELECT ID_modelo, nome_modelo, IDMARCA, nome FROM caminhoes")

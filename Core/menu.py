@@ -6,9 +6,9 @@ from Components.exibir import menu_exibir
 from Components.apagar import menu_apagar
 
 def menu(login, placa, cpf):
-    print('*', 20)
+    print('*' * 20)
     print('Bem Vindo ao Menu Inicial!')
-    print('*', 20)
+    print('*' * 20)
         
     while True:
         print('\nOpções do Menu:')

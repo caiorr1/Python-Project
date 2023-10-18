@@ -10,7 +10,7 @@ def cadastro():
     while True:
         loginCadastro = input('\nOlá, aqui você pode adicionar uma nova conta!\nQual o nome de usuário?\n')
 
-        conn = sqlite3.connect('banco_de_dados.db')
+        conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
         cursor.execute("SELECT login FROM usuarios WHERE login = ?", (loginCadastro,))
@@ -68,8 +68,8 @@ def cadastro():
                        (loginCadastro, senhaCadastro, id_usuario, cpf))
         conn.commit()
 
-        cursor.execute("INSERT INTO veiculos (usuario_id, placa, modelo, ano) VALUES (?, ?, ?, ?)",
-                       (id_usuario, placa, modelo, ano))
+        cursor.execute("INSERT INTO veiculos (placa, usuario_id, modelo, ano) VALUES (?, ?, ?, ?)",
+                       (placa, id_usuario, modelo, ano))
         conn.commit()
 
         conn.close()

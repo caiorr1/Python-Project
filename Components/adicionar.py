@@ -24,7 +24,7 @@ def adicionar_dados_caminhoes():
     IDMARCA = input('Digite o ID da marca: ')
     nome = input('Digite o nome da marca: ')
     
-    conn = sqlite3.connect('banco_de_dados.db')
+    conn = sqlite3.connect('data/banco_de_dados.db')
     cursor = conn.cursor()
     
     cursor.execute('''
@@ -69,7 +69,7 @@ def adicionar_veiculo_a_usuario(login):
         except ValueError:
             print('\nAno inválido. Insira um ano válido.')
 
-    conn = sqlite3.connect('banco_de_dados.db')
+    conn = sqlite3.connect('data/banco_de_dados.db')
     cursor = conn.cursor()
 
     # Verificar se o usuário existe

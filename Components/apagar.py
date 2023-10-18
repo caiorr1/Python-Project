@@ -21,7 +21,7 @@ def menu_apagar():
 
 def apagar_registro_usuarios(login):
     try:
-        conn = sqlite3.connect('banco_de_dados.db')
+        conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
         # Verificar se o usuário existe
@@ -50,7 +50,7 @@ def apagar_registro_usuarios(login):
 
 def apagar_registro_caminhoes(ID_modelo):
     try:
-        conn = sqlite3.connect('banco_de_dados.db')
+        conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
         # Verificar se o caminhão existe
