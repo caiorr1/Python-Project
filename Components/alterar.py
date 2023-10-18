@@ -14,13 +14,32 @@ def trocar_informacoes_usuarios(login):
             conn.close()
             return
 
-        print(f'Bem-vindo, {login}! O que você deseja trocar?')
+        # Consultar veículos associados ao usuário
+        cursor.execute("SELECT placa, modelo, ano FROM veiculos WHERE usuario_id = ?", (usuario_id[0],))
+        veiculos = cursor.fetchall()
+
+        if not veiculos:
+            print(f'Usuário {login} não possui veículos registrados.')
+            conn.close()
+            return
+
+        print(f'Bem-vindo, {login}! Selecione um veículo para atualizar:')
+        for i, veiculo in enumerate(veiculos, start=1):
+            placa, modelo, ano = veiculo
+            print(f'{i}. Placa: {placa}, Modelo: {modelo}, Ano: {ano}')
+
+        escolha_veiculo = int(input('Digite o número do veículo que deseja atualizar: ')) - 1
+
+        if escolha_veiculo < 0 or escolha_veiculo >= len(veiculos):
+            print('Seleção inválida.')
+            conn.close()
+            return
+
         print('1. Senha')
-        print('2. ID')
-        print('3. CPF')
-        print('4. Placa')
-        print('5. Modelo')
-        print('6. Ano')
+        print('2. CPF')
+        print('3. Placa')
+        print('4. Modelo')
+        print('5. Ano')
 
         escolha = input('Digite o número da opção desejada: ')
 
@@ -28,18 +47,15 @@ def trocar_informacoes_usuarios(login):
             nova_senha = input('Digite a nova senha: ')
             cursor.execute("UPDATE usuarios SET senha = ? WHERE login = ?", (nova_senha, login))
         elif escolha == '2':
-            novo_id = input('Digite o novo ID: ')
-            cursor.execute("UPDATE usuarios SET id = ? WHERE login = ?", (int(novo_id), login))
-        elif escolha == '3':
             novo_cpf = input('Digite o novo CPF: ')
             cursor.execute("UPDATE usuarios SET cpf = ? WHERE login = ?", (novo_cpf, login))
-        elif escolha == '4':
+        elif escolha == '3':
             nova_placa = input('Digite a nova placa: ')
             cursor.execute("UPDATE veiculos SET placa = ? WHERE usuario_id = ?", (nova_placa, usuario_id[0]))
-        elif escolha == '5':
+        elif escolha == '4':
             novo_modelo = input('Digite o novo modelo: ')
             cursor.execute("UPDATE veiculos SET modelo = ? WHERE usuario_id = ?", (novo_modelo, usuario_id[0]))
-        elif escolha == '6':
+        elif escolha == '5':
             novo_ano = input('Digite o novo ano: ')
             cursor.execute("UPDATE veiculos SET ano = ? WHERE usuario_id = ?", (int(novo_ano), usuario_id[0]))
         else:

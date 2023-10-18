@@ -9,7 +9,8 @@ def menu_exibir(login):
         print('\nOpções de Exibição:')
         print('1. Exibir seus dados')
         print('2. Exibir dados de caminhões')
-        print('3. Voltar ao menu principal')
+        print('3. Exibir histórico de chamados')
+        print('4. Voltar ao menu principal')
 
         opcao = input('Escolha uma opção (1/2/3): ')
 
@@ -18,10 +19,45 @@ def menu_exibir(login):
         elif opcao == '2':
             exibir_dados_caminhoes()
         elif opcao == '3':
+            exibir_historico_chamados(login)
+        elif opcao == '4':
             return
         else:
             print('\nOpção inválida. Tente novamente.\n')
+            
+def exibir_historico_chamados(login):
+    try:
+        conn = sqlite3.connect('data/banco_de_dados.db')
+        cursor = conn.cursor()
 
+        cursor.execute("SELECT * FROM historico_chamados WHERE login = ?", (login,))
+        chamados = cursor.fetchall()
+
+        if not chamados:
+            print('Nenhum histórico de chamados encontrado para este usuário.')
+        else:
+            print(f'Histórico de Chamados para o usuário {login}:')
+            for chamado in chamados:
+                print(f'ID: {chamado[0]}')
+                print(f'Tipo de Veículo: {chamado[2]}')
+                print(f'Descobrindo Caso: {chamado[3]}')
+                print(f'Timestamp: {chamado[4]}')
+                print(f'Endereço: {chamado[5]}')
+                print(f'Telefone: {chamado[6]}')
+                print(f'Tipo de Carroceria: {chamado[7]}')
+                print(f'Chassi: {chamado[8]}')
+                print(f'Comprimento: {chamado[9]}')
+                print(f'Peso com Carga: {chamado[10]}')
+                print(f'Peso sem Carga: {chamado[11]}')
+                print(f'Quantidade de Eixos: {chamado[12]}')
+                print(f'Informação Adicional: {chamado[13]}')
+                print()
+
+        conn.close()
+
+    except Exception as e:
+        print(f'Ocorreu um erro ao exibir o histórico de chamados: {str(e)}')
+        
 def exibir_dados_usuario(login):
     try:
         conn = sqlite3.connect('data/banco_de_dados.db')
