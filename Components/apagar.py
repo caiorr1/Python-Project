@@ -24,7 +24,6 @@ def apagar_registro_usuarios(login):
         conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
-        # Verificar se o usuário existe
         cursor.execute("SELECT id FROM usuarios WHERE login = ?", (login,))
         usuario_id = cursor.fetchone()
 
@@ -33,7 +32,6 @@ def apagar_registro_usuarios(login):
             conn.close()
             return
 
-        # Confirmar com o usuário antes de excluir o registro
         confirmacao = input(f'Tem certeza de que deseja apagar o registro com login {login}? (S para confirmar, outra tecla para cancelar): ')
 
         if confirmacao.lower() == 's':
@@ -53,7 +51,6 @@ def apagar_registro_caminhoes(ID_modelo):
         conn = sqlite3.connect('data/banco_de_dados.db')
         cursor = conn.cursor()
 
-        # Verificar se o caminhão existe
         cursor.execute("SELECT id FROM caminhoes WHERE ID_modelo = ?", (ID_modelo,))
         caminhao_id = cursor.fetchone()
 
@@ -62,7 +59,6 @@ def apagar_registro_caminhoes(ID_modelo):
             conn.close()
             return
 
-        # Confirmar com o usuário antes de excluir o registro
         confirmacao = input(f'Tem certeza de que deseja apagar o registro com ID de modelo {ID_modelo}? (S para confirmar, outra tecla para cancelar): ')
 
         if confirmacao.lower() == 's':
@@ -75,4 +71,6 @@ def apagar_registro_caminhoes(ID_modelo):
             print('Operação de apagar cancelada.')
 
     except Exception as e:
-        print(f'Ocorreu um erro ao apagar o registro: {str(e)}')
+        print(f'Ocorreu um erro ao apagar o registro: {str(e)}') 
+    finally:
+        conn.close()

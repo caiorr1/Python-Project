@@ -10,78 +10,83 @@ def cadastro():
     while True:
         loginCadastro = input('\nOlá, aqui você pode adicionar uma nova conta!\nQual o nome de usuário?\n')
 
-        conn = sqlite3.connect('data/banco_de_dados.db')
-        cursor = conn.cursor()
+        conn = None 
 
-        cursor.execute("SELECT login FROM usuarios WHERE login = ?", (loginCadastro,))
-        usuario_existente = cursor.fetchone()
+        try:
+            conn = sqlite3.connect('data/banco_de_dados.db')
+            cursor = conn.cursor()
 
-        if usuario_existente:
-            print(f'\nO usuário {loginCadastro} já existe.')
-            decisao_cadastro = input('\nDigite (1) para fazer login ou (2) para cadastrar outro usuário: ')
+            cursor.execute("SELECT login FROM usuarios WHERE login = ?", (loginCadastro,))
+            usuario_existente = cursor.fetchone()
 
-            if decisao_cadastro == '1':
-                print('\nVocê será direcionado para o login.')
-                conn.close()
-                login()
-                return
-            elif decisao_cadastro == '2':
-                print('\nVocê será direcionado para o cadastro.')
+            if usuario_existente:
+                print(f'\nO usuário {loginCadastro} já existe.')
+                decisao_cadastro = input('\nDigite (1) para fazer login ou (2) para cadastrar outro usuário: ')
+
+                if decisao_cadastro == '1':
+                    print('\nVocê será direcionado para o login.')
+                    login()
+                    return
+                elif decisao_cadastro == '2':
+                    print('\nVocê será direcionado para o cadastro.')
+                    continue
+                else:
+                    print('\nEntrada inválida. Tente novamente!')
+                    continue
+
+            cpf = input('\nInsira o seu CPF: ').replace(' ', '')
+
+            if len(cpf) != 11:
+                print('\nCPF inválido. O CPF deve ter 11 dígitos.')
                 continue
-            else:
-                print('\nEntrada inválida. Tente novamente!')
+
+            placa = input('\nInsira a placa do veículo: ').upper()
+
+            if len(placa) != 7:
+                print('\nPlaca inválida. A placa deve ter 7 caracteres.')
                 continue
 
-        cpf = input('\nInsira o seu CPF: ').replace(' ', '')
+            modelo = input('\nInsira o modelo do veículo: ').upper()
 
-        if len(cpf) != 11:
-            print('\nCPF inválido. O CPF deve ter 11 dígitos.')
-            continue
+            while True:
+                try:
+                    ano = int(input('\nInsira o ano do veículo: '))
+                    if not (1900 <= ano <= 9999):
+                        raise ValueError()
+                    break
+                except ValueError:
+                    print('\nAno inválido. Insira um ano válido.')
 
-        placa = input('\nInsira a placa do veículo: ').upper()
+            senhaCadastro = input('\nQual a senha: ')
+            senhaConfirmacao = input('\nConfirme a senha: ')
 
-        if len(placa) != 7:
-            print('\nPlaca inválida. A placa deve ter 7 caracteres.')
-            continue
+            if senhaCadastro != senhaConfirmacao:
+                print('\nAs senhas não coincidem. Tente novamente.')
+                continue
 
-        modelo = input('\nInsira o modelo do veículo: ').upper()
+            id_usuario = random.randint(10000, 99999)
 
-        while True:
-            try:
-                ano = int(input('\nInsira o ano do veículo: '))
-                if not (1900 <= ano <= 9999):
-                    raise ValueError()
-                break
-            except ValueError:
-                print('\nAno inválido. Insira um ano válido.')
+            cursor.execute("INSERT INTO usuarios (login, senha, id, cpf) VALUES (?, ?, ?, ?)",
+                           (loginCadastro, senhaCadastro, id_usuario, cpf))
+            conn.commit()
 
-        senhaCadastro = input('\nQual a senha: ')
-        senhaConfirmacao = input('\nConfirme a senha: ')
+            cursor.execute("INSERT INTO veiculos (placa, usuario_id, modelo, ano) VALUES (?, ?, ?, ?)",
+                           (placa, id_usuario, modelo, ano))
+            conn.commit()
 
-        if senhaCadastro != senhaConfirmacao:
-            print('\nAs senhas não coincidem. Tente novamente.')
-            continue
-        
-        id_usuario = random.randint(10000, 99999)
+            print('\nParabéns! Você realizou o seu cadastro!')
+            print(f'Seu id é {id_usuario}\n')
 
-        cursor.execute("INSERT INTO usuarios (login, senha, id, cpf) VALUES (?, ?, ?, ?)",
-                       (loginCadastro, senhaCadastro, id_usuario, cpf))
-        conn.commit()
+            while True:
+                decisao = input('Digite (1) para cadastrar outro usuário ou (2) para fazer login: ')
+                if decisao == '1':
+                    break
+                elif decisao == '2':
+                    login()
+                    return
 
-        cursor.execute("INSERT INTO veiculos (placa, usuario_id, modelo, ano) VALUES (?, ?, ?, ?)",
-                       (placa, id_usuario, modelo, ano))
-        conn.commit()
-
-        conn.close()
-
-        print('\nParabéns! Você realizou o seu cadastro!')
-        print(f'Seu id é {id_usuario}\n')
-
-        while True:
-            decisao = input('Digite (1) para cadastrar outro usuário ou (2) para fazer login: ')
-            if decisao == '1':
-                break
-            elif decisao == '2':
-                login()
-                return
-
+        except Exception as e:
+            print(f'Ocorreu um erro ao realizar o cadastro: {str(e)}')
+        finally:
+            if conn:
+                conn.close()  

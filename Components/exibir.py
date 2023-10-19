@@ -75,10 +75,11 @@ def exibir_dados_usuario(login):
 
             cursor.execute("SELECT placa, modelo, ano FROM veiculos WHERE usuario_id = ?", (usuario[0],))
             veiculos = cursor.fetchall()
-
+            
             if veiculos:
                 print("\nVeículos Cadastrados:")
                 for veiculo in veiculos:
+                    print('----------------------')
                     print(f'Placa: {veiculo[0]}')
                     print(f'Modelo: {veiculo[1]}')
                     print(f'Ano: {veiculo[2]}')
@@ -103,15 +104,18 @@ def exibir_dados_caminhoes():
         else:
             print('\nDados de Caminhões:')
             for caminhao in caminhoes:
+                print('----------------------')
                 print(f'ID do Modelo: {caminhao[0]}')
                 print(f'Nome do Modelo: {caminhao[1]}')
                 print(f'ID da Marca: {caminhao[2]}')
                 print(f'Nome da Marca: {caminhao[3]}')
-                print()
 
-        conn.close()
 
     except Exception as e:
         print(f'\nOcorreu um erro ao exibir dados dos caminhões: {str(e)}\n')
+    
+    finally:
+            conn.close()
+
 
 
