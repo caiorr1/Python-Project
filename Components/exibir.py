@@ -34,9 +34,9 @@ def exibir_historico_chamados(login):
         chamados = cursor.fetchall()
 
         if not chamados:
-            print('Nenhum histórico de chamados encontrado para este usuário.')
+            print('\nNenhum histórico de chamados encontrado para este usuário.\n')
         else:
-            print(f'Histórico de Chamados para o usuário {login}:')
+            print(f'\nHistórico de Chamados para o usuário {login}:')
             for chamado in chamados:
                 print(f'ID: {chamado[0]}')
                 print(f'Tipo de Veículo: {chamado[2]}')
@@ -56,7 +56,7 @@ def exibir_historico_chamados(login):
         conn.close()
 
     except Exception as e:
-        print(f'Ocorreu um erro ao exibir o histórico de chamados: {str(e)}')
+        print(f'\nOcorreu um erro ao exibir o histórico de chamados: {str(e)}\n')
         
 def exibir_dados_usuario(login):
     try:
@@ -88,7 +88,7 @@ def exibir_dados_usuario(login):
         conn.close()
 
     except Exception as e:
-        print(f'Ocorreu um erro ao exibir dados do usuário: {str(e)}')
+        print(f'\nOcorreu um erro ao exibir dados do usuário: {str(e)}\n')
 
 def exibir_dados_caminhoes():
     try:
@@ -99,9 +99,9 @@ def exibir_dados_caminhoes():
         caminhoes = cursor.fetchall()
 
         if not caminhoes:
-            print('Nenhum dado de caminhão encontrado.')
+            print('\nNenhum dado de caminhão encontrado.')
         else:
-            print('Dados de Caminhões:')
+            print('\nDados de Caminhões:')
             for caminhao in caminhoes:
                 print(f'ID do Modelo: {caminhao[0]}')
                 print(f'Nome do Modelo: {caminhao[1]}')
@@ -112,6 +112,6 @@ def exibir_dados_caminhoes():
         conn.close()
 
     except Exception as e:
-        print(f'Ocorreu um erro ao exibir dados dos caminhões: {str(e)}')
+        print(f'\nOcorreu um erro ao exibir dados dos caminhões: {str(e)}\n')
 
 
