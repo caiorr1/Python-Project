@@ -1,4 +1,4 @@
-import oracledb
+import cx_Oracle
 
 def menu_exibir(login):
     print('*' * 20)
@@ -24,7 +24,7 @@ def menu_exibir(login):
 
 def exibir_historico_chamados(login):
     try:
-        conn = oracledb.connect(user="rm98430", password="210693", dsn="oracle.fiap.com.br:1521/ORCL")
+        conn = cx_Oracle.connect(user="rm98430", password="210693", dsn="oracle.fiap.com.br:1521/ORCL")
         cursor = conn.cursor()
 
         cursor.execute("SELECT * FROM TB_ACS_ORDEMSERVICO WHERE ID_USER = (SELECT ID_USER FROM TB_ACS_USER WHERE NOME_USER = :login)", {"login": login})
@@ -36,18 +36,11 @@ def exibir_historico_chamados(login):
             print(f'\nHistórico de Chamados para o usuário {login}:')
             for chamado in chamados:
                 print(f'ID: {chamado[0]}')
-                print(f'Tipo de Veículo: {chamado[2]}')
-                print(f'Descobrindo Caso: {chamado[3]}')
-                print(f'Timestamp: {chamado[4]}')
-                print(f'Endereço: {chamado[5]}')
-                print(f'Telefone: {chamado[6]}')
-                print(f'Tipo de Carroceria: {chamado[7]}')
-                print(f'Chassi: {chamado[8]}')
-                print(f'Comprimento: {chamado[9]}')
-                print(f'Peso com Carga: {chamado[10]}')
-                print(f'Peso sem Carga: {chamado[11]}')
-                print(f'Quantidade de Eixos: {chamado[12]}')
-                print(f'Informação Adicional: {chamado[13]}')
+                print(f'Descrição do Chamado: {chamado[4]}')
+                print(f'Data de Abertura: {chamado[5]}')
+                print(f'Data de Fechamento: {chamado[6]}')
+                print(f'Status: {chamado[7]}')
+                print(f'Localização: {chamado[8]}')
                 print()
 
         conn.close()
@@ -57,7 +50,7 @@ def exibir_historico_chamados(login):
 
 def exibir_dados_usuario(login):
     try:
-        conn = oracledb.connect(user="rm98430", password="210693", dsn="oracle.fiap.com.br:1521/ORCL")
+        conn = cx_Oracle.connect(user="rm98430", password="210693", dsn="oracle.fiap.com.br:1521/ORCL")
         cursor = conn.cursor()
 
         cursor.execute("SELECT ID_USER, CPF_USER FROM TB_ACS_USER WHERE NOME_USER = :login", {"login": login})
@@ -70,7 +63,7 @@ def exibir_dados_usuario(login):
             print(f'ID: {usuario[0]}')
             print(f'CPF: {usuario[1]}')
 
-            cursor.execute("SELECT PLACA_VEICULO, MODELO_VEICULO, ANO_VEICULO FROM TB_ACS_USER_VEICULO WHERE ID_USER = :usuario_id", {"usuario_id": usuario[0]})
+            cursor.execute("SELECT PLACA_VEICULO, MODELO_VEICULO, ANO_VEICULO FROM TB_ACS_VEICULO_APOLICE WHERE ID_USER = :usuario_id", {"usuario_id": usuario[0]})
             veiculos = cursor.fetchall()
 
             if veiculos:
