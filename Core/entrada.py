@@ -4,7 +4,7 @@ from Core.login import login
 def main():
     loop = 1
 
-    print('*'*28)
+    print()
     print('SISTEMA ANDROMEDA')
     print('*'*28)
 
