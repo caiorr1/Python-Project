@@ -1,4 +1,4 @@
-import sqlite3
+import oracledb
 
 def menu_exibir(login):
     print('*' * 20)
@@ -8,29 +8,26 @@ def menu_exibir(login):
     while True:
         print('\nOpções de Exibição:')
         print('1. Exibir seus dados')
-        print('2. Exibir dados de caminhões')
-        print('3. Exibir histórico de chamados')
-        print('4. Voltar ao menu principal')
+        print('2. Exibir histórico de chamados')
+        print('3. Voltar ao menu principal')
 
         opcao = input('Escolha uma opção (1/2/3): ')
 
         if opcao == '1':
             exibir_dados_usuario(login)
         elif opcao == '2':
-            exibir_dados_caminhoes()
-        elif opcao == '3':
             exibir_historico_chamados(login)
-        elif opcao == '4':
+        elif opcao == '3':
             return
         else:
             print('\nOpção inválida. Tente novamente.\n')
-            
+
 def exibir_historico_chamados(login):
     try:
-        conn = sqlite3.connect('data/banco_de_dados.db')
+        conn = oracledb.connect(user="rm98430", password="210693", dsn="oracle.fiap.com.br:1521/ORCL")
         cursor = conn.cursor()
 
-        cursor.execute("SELECT * FROM historico_chamados WHERE login = ?", (login,))
+        cursor.execute("SELECT * FROM TB_ACS_ORDEMSERVICO WHERE ID_USER = (SELECT ID_USER FROM TB_ACS_USER WHERE NOME_USER = :login)", {"login": login})
         chamados = cursor.fetchall()
 
         if not chamados:
@@ -57,13 +54,13 @@ def exibir_historico_chamados(login):
 
     except Exception as e:
         print(f'\nOcorreu um erro ao exibir o histórico de chamados: {str(e)}\n')
-        
+
 def exibir_dados_usuario(login):
     try:
-        conn = sqlite3.connect('data/banco_de_dados.db')
+        conn = oracledb.connect(user="rm98430", password="210693", dsn="oracle.fiap.com.br:1521/ORCL")
         cursor = conn.cursor()
 
-        cursor.execute("SELECT id, cpf FROM usuarios WHERE login = ?", (login,))
+        cursor.execute("SELECT ID_USER, CPF_USER FROM TB_ACS_USER WHERE NOME_USER = :login", {"login": login})
         usuario = cursor.fetchone()
 
         if not usuario:
@@ -73,9 +70,9 @@ def exibir_dados_usuario(login):
             print(f'ID: {usuario[0]}')
             print(f'CPF: {usuario[1]}')
 
-            cursor.execute("SELECT placa, modelo, ano FROM veiculos WHERE usuario_id = ?", (usuario[0],))
+            cursor.execute("SELECT PLACA_VEICULO, MODELO_VEICULO, ANO_VEICULO FROM TB_ACS_USER_VEICULO WHERE ID_USER = :usuario_id", {"usuario_id": usuario[0]})
             veiculos = cursor.fetchall()
-            
+
             if veiculos:
                 print("\nVeículos Cadastrados:")
                 for veiculo in veiculos:
@@ -90,32 +87,3 @@ def exibir_dados_usuario(login):
 
     except Exception as e:
         print(f'\nOcorreu um erro ao exibir dados do usuário: {str(e)}\n')
-
-def exibir_dados_caminhoes():
-    try:
-        conn = sqlite3.connect('data/banco_de_dados.db')
-        cursor = conn.cursor()
-
-        cursor.execute("SELECT ID_modelo, nome_modelo, IDMARCA, nome FROM caminhoes")
-        caminhoes = cursor.fetchall()
-
-        if not caminhoes:
-            print('\nNenhum dado de caminhão encontrado.')
-        else:
-            print('\nDados de Caminhões:')
-            for caminhao in caminhoes:
-                print('----------------------')
-                print(f'ID do Modelo: {caminhao[0]}')
-                print(f'Nome do Modelo: {caminhao[1]}')
-                print(f'ID da Marca: {caminhao[2]}')
-                print(f'Nome da Marca: {caminhao[3]}')
-
-
-    except Exception as e:
-        print(f'\nOcorreu um erro ao exibir dados dos caminhões: {str(e)}\n')
-    
-    finally:
-            conn.close()
-
-
-

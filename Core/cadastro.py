@@ -1,21 +1,20 @@
 import random
-import cx_Oracle
+import oracledb
 from Core.login import login
+
 
 def cadastro():
     print('*' * 20)
     print('CADASTRO')
     print('*' * 20)
 
-    # Configurar a conexão com o banco de dados Oracle
-    dsn_tns = cx_Oracle.makedsn('seu_endereco_do_banco', 'porta', service_name='nome_do_serviço')
-    conn = cx_Oracle.connect(user='seu_usuario', password='sua_senha', dsn=dsn_tns)
-    cursor = conn.cursor()
+    try:
+        conn = oracledb.connect(user="rm98430", password="210693", dsn="oracle.fiap.com.br:1521/ORCL")
+        cursor = conn.cursor()
+        
+        while True:
+            loginCadastro = input('\nOlá, aqui você pode adicionar uma nova conta!\nQual o nome de usuário?\n')
 
-    while True:
-        loginCadastro = input('\nOlá, aqui você pode adicionar uma nova conta!\nQual o nome de usuário?\n')
-
-        try:
             cursor.execute("SELECT login FROM TB_ACS_USER WHERE login = :loginCadastro", loginCadastro=loginCadastro)
             usuario_existente = cursor.fetchone()
 
@@ -25,7 +24,6 @@ def cadastro():
 
                 if decisao_cadastro == '1':
                     print('\nVocê será direcionado para o login.')
-                    # Adicione aqui o código para o login com Oracle
                     return
                 elif decisao_cadastro == '2':
                     print('\nVocê será direcionado para o cadastro.')
@@ -57,13 +55,6 @@ def cadastro():
                 except ValueError:
                     print('\nAno inválido. Insira um ano válido.')
 
-            senhaCadastro = input('\nQual a senha: ')
-            senhaConfirmacao = input('\nConfirme a senha: ')
-
-            if senhaCadastro != senhaConfirmacao:
-                print('\nAs senhas não coincidem. Tente novamente.')
-                continue
-
             id_usuario = random.randint(10000, 99999)
 
             cursor.execute("INSERT INTO TB_ACS_USER (ID_USER, NOME_USER, CPF_USER, ENDERECO_USER, EMAIL_USER, TELEFONE_USER) VALUES (ID_USER_SEQ.NEXTVAL, :loginCadastro, :cpf, :endereco, :email, :telefone)",
@@ -86,11 +77,11 @@ def cadastro():
                 if decisao == '1':
                     break
                 elif decisao == '2':
-                    # Adicione aqui o código para o login com Oracle
                     return
 
-        except Exception as e:
-            print(f'Ocorreu um erro ao realizar o cadastro: {str(e)}')
-        finally:
-            if conn:
-                conn.close()
+    except Exception as e:
+        print(f'Ocorreu um erro ao realizar o cadastro: {str(e)}')
+    finally:
+        if conn:
+            conn.close()  
+
